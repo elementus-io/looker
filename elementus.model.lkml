@@ -13,3 +13,7 @@ explore: bilateral_transfers {
     sql_on: ${bilateral_transfers.src_address} = ${btc_accounts.address} ;;
   }
 }
+
+explore: entity_transfers {
+  # optional: join to other views
+}
