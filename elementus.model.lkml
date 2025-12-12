@@ -13,3 +13,4 @@ explore: bilateral_transfers {
     sql_on: ${bilateral_transfers.src_address} = ${btc_accounts.address} ;;
   }
 }
+#  adding commit comments
