@@ -98,10 +98,10 @@ view: bilateral_transfers {
 
 }
 
-view: bilateral_transfers__src_addresses {
+# view: bilateral_transfers__src_addresses {
 
-  dimension: bilateral_transfers__src_addresses {
-    type: string
-    sql: bilateral_transfers__src_addresses ;;
-  }
-}
+#   dimension: bilateral_transfers__src_addresses {
+#     type: string
+#     sql: bilateral_transfers__src_addresses ;;
+#   }
+# }
