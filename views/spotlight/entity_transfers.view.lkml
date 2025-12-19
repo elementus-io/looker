@@ -2,7 +2,7 @@ view: entity_transfers {
 
   derived_table: {
     sql: SELECT row_number() over(order by timestamp, txid) as rn , * FROM `elementus-prod-242016.spotlight.entity_transfers` ;;
-    # persist_for: "4 hours"
+    # persist_for: "24 hours"
   }
 
   # sql_table_name: `elementus-prod-242016.spotlight.entity_transfers` ;;

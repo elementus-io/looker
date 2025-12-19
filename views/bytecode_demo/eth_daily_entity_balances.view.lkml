@@ -4,6 +4,7 @@ view: eth_daily_entity_balances {
  sql_table_name: `elementus-prod-242016.ds.eth_daily_entity_balances` ;;
 
   dimension: balance {
+# required_access_grants: [can_see_balance]
     type: number
     sql: ${TABLE}.balance ;;
   }
