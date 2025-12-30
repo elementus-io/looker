@@ -2,6 +2,10 @@ connection: "bigquery"
 
 include: "/views/*.view.lkml"
 
+include: "/views/spotlight/entity_transfers.view.lkml"
+
+include: "/explores/eth_daily_entity_balances.explore.lkml"
+
 
 explore: bilateral_transfers {
   always_filter: {
@@ -14,3 +18,5 @@ explore: bilateral_transfers {
   }
 }
 #  adding commit comments
+
+explore: entity_transfers {}
