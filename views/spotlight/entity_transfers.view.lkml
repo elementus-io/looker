@@ -161,6 +161,7 @@ view: entity_transfers {
     group_label: "totals"
     type: sum
     sql: ${usd} ;;
+    filters: [direction: "incoming"]
   }
   measure: unique_tokens {
     description: "This is count of unique tokens"
