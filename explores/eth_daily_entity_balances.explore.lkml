@@ -1,16 +1,9 @@
 include: "/views/bytecode_demo/eth_daily_entity_balances.view.lkml"
 include: "/views/bytecode_demo/dates.view.lkml"
 
-# access_grant: can_see_balance {
-#   user_attribute: can_see_balance
-#   allowed_values: [ "yes" ]
-# }
-
-
-
 explore: token_supplies {
-  description: "This is the description for Token Supplies"
-  label: "Token-Label"
+  description: "Daily token balances and supply metrics for Ethereum entities"
+  label: "Token Supplies"
   from: eth_daily_entity_balances
 
   join: dates {
