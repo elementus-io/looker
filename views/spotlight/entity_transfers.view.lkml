@@ -51,49 +51,6 @@ view: entity_transfers {
     datatype: date
     sql: ${TABLE}.date ;;
   }
-  dimension: datetime_day {
-    type: number
-    sql: ${TABLE}.datetime_day ;;
-  }
-  dimension: datetime_dayofweek {
-    type: number
-    sql: ${TABLE}.datetime_dayofweek ;;
-  }
-  dimension: datetime_hour {
-    type: number
-    sql: ${TABLE}.datetime_hour ;;
-  }
-  dimension_group: datetime_last_sunday {
-    type: time
-    timeframes: [raw, date, week, month, quarter, year]
-    convert_tz: no
-    datatype: date
-    sql: ${TABLE}.datetime_last_sunday ;;
-  }
-  dimension: datetime_month {
-    type: number
-    sql: ${TABLE}.datetime_month ;;
-  }
-  dimension: datetime_namedayofweek {
-    type: string
-    sql: ${TABLE}.datetime_namedayofweek ;;
-  }
-  dimension: datetime_namemonth {
-    type: string
-    sql: ${TABLE}.datetime_namemonth ;;
-  }
-  dimension: datetime_quarter {
-    type: number
-    sql: ${TABLE}.datetime_quarter ;;
-  }
-  dimension: datetime_week_num {
-    type: number
-    sql: ${TABLE}.datetime_week_num ;;
-  }
-  dimension: datetime_year {
-    type: number
-    sql: ${TABLE}.datetime_year ;;
-  }
   dimension: direction {
     type: string
     sql: ${TABLE}.direction ;;
@@ -190,7 +147,28 @@ view: entity_transfers {
     sql: ${TABLE}.usd_exchange_rate ;;
   }
   measure: count {
+    group_label: "counts"
     type: count
-    drill_fields: [token_name, counterparty_entity_display_name, entity_display_name, counterparty_entity_type_display_name, entity_type_display_name]
+    drill_fields: [drill_down_fields*]
+  }
+  measure: total_unique_entities {
+    group_label: "counts"
+    type: count_distinct
+    sql: ${entity} ;;
+    drill_fields: [drill_down_fields*]
+  }
+  measure: usd_total {
+    group_label: "totals"
+    type: sum
+    sql: ${usd} ;;
+  }
+  measure: unique_tokens {
+    description: "This is count of unique tokens"
+    group_label: "counts"
+    type: count_distinct
+    sql: ${token_name} ;;
+  }
+  set: drill_down_fields {
+    fields: [unique_symbol, counterparty_entity_display_name, entity_display_name, counterparty_entity_type_display_name, entity_type_display_name]
   }
 }
