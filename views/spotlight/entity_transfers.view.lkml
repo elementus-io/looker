@@ -191,6 +191,6 @@ view: entity_transfers {
   }
   measure: count {
     type: count
-    drill_fields: [counterparty_entity_display_name, token_name, entity_display_name, counterparty_entity_type_display_name, entity_type_display_name]
+    drill_fields: [token_name, counterparty_entity_display_name, entity_display_name, counterparty_entity_type_display_name, entity_type_display_name]
   }
 }
