@@ -149,6 +149,7 @@ view: entity_transfers {
   measure: count {
     group_label: "counts"
     type: count
+    filters: [direction: "incoming"]
     drill_fields: [drill_down_fields*]
   }
   measure: total_unique_entities {
@@ -162,6 +163,7 @@ view: entity_transfers {
     type: sum
     sql: ${usd} ;;
     filters: [direction: "incoming"]
+    drill_fields: [drill_down_fields*]
   }
   measure: unique_tokens {
     description: "This is count of unique tokens"
