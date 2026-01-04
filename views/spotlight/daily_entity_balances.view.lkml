@@ -1,7 +1,7 @@
 view: daily_entity_balances {
   # We use a PDT to materialize the view for performance
   derived_table: {
-    sql: SELECT SELECT row_number() over(order by date, entity, unique_symbol) as rn , * FROM `elementus-prod-242016.spotlight.daily_entity_balances` ;;
+    sql: SELECT row_number() over(order by date, entity, unique_symbol) as rn, * FROM `elementus-prod-242016.spotlight.daily_entity_balances` ;;
     datagroup_trigger: daily_entity_balances_datagroup
     partition_keys: ["date"]
     cluster_keys: ["entity", "unique_symbol"]

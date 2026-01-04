@@ -22,7 +22,7 @@ view: entity_transfers {
   }
   dimension: counterparty_entity_type_parent {
     type: string
-    sql: ${TABLE}.counteparty_entity_type_parent ;;
+    sql: ${TABLE}.counterparty_entity_type_parent ;;
   }
   dimension: counterparty_cluster {
     type: string
