@@ -10,9 +10,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "BTC"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "BTC"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
@@ -52,9 +57,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "ETH"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "ETH"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
@@ -94,9 +104,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "LINK"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "LINK"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
@@ -136,9 +151,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "USDT"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "USDT"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
@@ -178,9 +198,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "FDUSD"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "FDUSD"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
@@ -220,9 +245,14 @@ dashboard: cex_balances {
      explore: daily_entity_balances
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
-     filters:
-       daily_entity_balances.entity_type: "centralized exchange"
-       daily_entity_balances.symbol: "USDC"
+     filters: {
+      field: daily_entity_balances.entity_type
+      value: "centralized exchange"
+    }
+    filters: {
+      field: daily_entity_balances.symbol
+      value: "USDC"
+    }
      sorts: [daily_entity_balances.date_date desc]
      limit: 5000
      query_timezone: America/New_York
