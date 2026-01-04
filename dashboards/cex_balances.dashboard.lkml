@@ -34,8 +34,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
@@ -81,8 +81,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
@@ -128,8 +128,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
@@ -175,8 +175,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
@@ -222,8 +222,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
@@ -269,8 +269,8 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ''
-     stacking: ''
+     trellis: ""
+     stacking: ""
      limit_displayed_rows: false
      legend_position: center
      point_style: none
