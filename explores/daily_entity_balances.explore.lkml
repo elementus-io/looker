@@ -5,6 +5,6 @@ explore: daily_entity_balances {
   view_label: "Daily Entity Balances"
 
   always_filter: {
-    filters: [daily_entity_balances.date_date: "7 days"]
+    filters: [daily_entity_balances.date_date: "last 7 days"]
   }
 }

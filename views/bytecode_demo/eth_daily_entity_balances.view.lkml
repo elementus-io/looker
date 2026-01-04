@@ -54,8 +54,14 @@ view: eth_daily_entity_balances {
     type: string
     sql: ${TABLE}.token_name ;;
   }
-  dimension: unique_symbol {
+  dimension: pk {
     primary_key: yes
+    hidden: yes
+    type: string
+    sql: CONCAT(CAST(${TABLE}.date AS STRING), '-', ${TABLE}.entity, '-', ${TABLE}.unique_symbol) ;;
+  }
+
+  dimension: unique_symbol {
     type: string
     sql: ${TABLE}.unique_symbol ;;
   }
