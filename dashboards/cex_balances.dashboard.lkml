@@ -18,7 +18,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "BTC"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
@@ -65,7 +65,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "ETH"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
@@ -112,7 +112,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "LINK"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
@@ -159,7 +159,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "USDT"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
@@ -206,7 +206,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "FDUSD"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
@@ -253,7 +253,7 @@ dashboard: cex_balances {
       field: daily_entity_balances.symbol
       value: "USDC"
     }
-     sorts: [daily_entity_balances.date_date desc]
+     sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
      query_timezone: America/New_York
      x_axis_gridlines: false
