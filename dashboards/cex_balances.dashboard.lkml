@@ -11,12 +11,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "BTC"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "BTC"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -34,9 +30,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
@@ -58,12 +52,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "ETH"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "ETH"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -81,9 +71,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
@@ -105,12 +93,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "LINK"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "LINK"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -128,9 +112,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
@@ -152,12 +134,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "USDT"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "USDT"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -175,9 +153,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
@@ -199,12 +175,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "FDUSD"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "FDUSD"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -222,9 +194,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
@@ -246,12 +216,8 @@ dashboard: cex_balances {
      type: looker_line
      fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
      filters: {
-      field: daily_entity_balances.entity_type
-      value: "centralized exchange"
-    }
-    filters: {
-      field: daily_entity_balances.symbol
-      value: "USDC"
+      "daily_entity_balances.entity_type": "centralized exchange"
+      "daily_entity_balances.symbol": "USDC"
     }
      sorts: ["daily_entity_balances.date_date desc"]
      limit: 5000
@@ -269,9 +235,7 @@ dashboard: cex_balances {
      x_axis_reversed: false
      y_axis_reversed: false
      plot_size_by_field: false
-     trellis: ""
-     stacking: ""
-     limit_displayed_rows: false
+      limit_displayed_rows: false
      legend_position: center
      point_style: none
      show_value_labels: false
