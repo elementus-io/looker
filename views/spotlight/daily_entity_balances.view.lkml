@@ -3,8 +3,7 @@ view: daily_entity_balances {
   derived_table: {
     sql: SELECT row_number() over(order by date, entity, unique_symbol) as rn, * FROM `elementus-prod-242016.spotlight.daily_entity_balances` ;;
     datagroup_trigger: daily_entity_balances_datagroup
-    partition_keys: ["date"]
-    cluster_keys: ["entity", "unique_symbol"]
+    cluster_keys: ["date", "entity_type", "entity", "unique_symbol"]
     increment_key: "date"
     increment_offset: 3 # Rebuild last 3 days to catch late arriving data
   }
@@ -85,14 +84,7 @@ view: daily_entity_balances {
 
   dimension_group: date {
     type: time
-    timeframes: [
-      raw,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
+    timeframes: [raw, date, week, month, quarter, year, day_of_week,day_of_month,day_of_year,week_of_year]
     convert_tz: no
     datatype: date
     sql: ${TABLE}.date ;;
