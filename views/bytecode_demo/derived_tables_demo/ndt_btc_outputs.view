@@ -1,0 +1,83 @@
+# If necessary, uncomment the line below to include explore_source.
+# include: "btc_outputs.explore.lkml"
+
+view: ndt_btc_outputs {
+  derived_table: {
+    explore_source: btc_outputs {
+      column: output_block_hash {field: btc_outputs.block_hash }
+      column: output_block_number {field: btc_outputs.block_number}
+      column: output_index {field: btc_outputs.index}
+      column: output_type {field: btc_outputs.type}
+      column: output_value {field: btc_outputs.value}
+      column: output_transaction_hash {field: btc_outputs.transaction_hash}
+      column: input_block_hash { field: inputs.block_hash }
+      column: input_block_number { field: inputs.block_number }
+      column: input_index { field: inputs.index }
+      column: input_transaction_hash { field: inputs.transaction_hash }
+      column: input_type { field: inputs.type }
+      column: price { field: index_ohlcv_minutes.price }
+      filters: {
+        field: btc_outputs.value
+        value: ">546"
+      }
+      derived_column: custom_index {
+        sql: output_index||input_index ;;
+      }
+      derived_column: pk {
+        sql: row_number() over (order by output_block_hash) ;;
+      }
+    }
+     persist_for: "4 hours"
+  }
+
+  dimension: pk {
+    primary_key: yes
+    sql: ${TABLE}.pk ;;
+    hidden: yes
+
+  }
+  dimension: output_block_hash {
+    description: ""
+  }
+  dimension: output_block_number {
+    description: ""
+    type: number
+  }
+  dimension: output_index {
+    description: ""
+    type: number
+  }
+  dimension: output_type {
+    description: ""
+  }
+  dimension: output_value {
+    description: ""
+    type: number
+  }
+  dimension: output_transaction_hash {
+    description: ""
+  }
+  dimension: input_block_hash {
+    description: ""
+  }
+  dimension: input_block_number {
+    description: ""
+    type: number
+  }
+  dimension: input_index {
+    description: ""
+    type: number
+  }
+  dimension: input_transaction_hash {
+    description: ""
+  }
+  dimension: input_type {
+    description: ""
+  }
+  dimension: price {
+    description: ""
+    value_format: "$#,##0"
+    type: number
+  }
+}
+
