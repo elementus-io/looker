@@ -1,7 +1,7 @@
 view: entity_transfers {
 
   derived_table: {
-    sql: SELECT row_number() over(order by timestamp, txid) as rn , * FROM `elementus-prod-242016.spotlight.entity_transfers` ;;
+    sql: SELECT * FROM `elementus-prod-242016.spotlight.entity_transfers` ;;
   }
 
   dimension: amount {
@@ -102,7 +102,7 @@ view: entity_transfers {
 
   dimension: pk {
     type: number
-    sql: ${TABLE}.rn ;;
+    sql: ${TABLE}.id ;;
     primary_key: yes
     hidden: yes
 
