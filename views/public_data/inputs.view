@@ -1,4 +1,3 @@
-
 view: inputs {
   sql_table_name: `elementus-prod-242016.bq_public_crypto_bitcoin.inputs` ;;
 
