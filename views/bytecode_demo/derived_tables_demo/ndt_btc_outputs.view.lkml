@@ -1,3 +1,6 @@
+# If necessary, uncomment the line below to include explore_source.
+# include: "btc_outputs.explore.lkml"
+
 view: ndt_btc_outputs {
   derived_table: {
     explore_source: btc_outputs {
@@ -77,4 +80,3 @@ view: ndt_btc_outputs {
     type: number
   }
 }
-
