@@ -116,6 +116,210 @@
     col: 14
     width: 8
     height: 8
+  - title: ETH CEX Balances
+    name: ETH CEX Balances
+    model: elementus
+    explore: daily_entity_balances
+    type: looker_line
+    fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
+    fill_fields: [daily_entity_balances.date_date]
+    filters:
+      daily_entity_balances.date_date: 7 days
+      daily_entity_balances.entity_type: centralized exchange
+      daily_entity_balances.symbol: ETH
+    sorts: [daily_entity_balances.date_date desc]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: daily_entity_balances.total_balance,
+            id: daily_entity_balances.total_balance, name: Total Balance}], showLabels: true,
+        showValues: true, unpinAxis: true, tickDensity: default, tickDensityCustom: 5,
+        type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    defaults_version: 1
+    listen:
+      Date Date: daily_entity_balances.date_date
+    row: 8
+    col: 0
+    width: 12
+    height: 8
+  - title: LINK CEX Balances
+    name: LINK CEX Balances
+    model: elementus
+    explore: daily_entity_balances
+    type: looker_line
+    fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
+    fill_fields: [daily_entity_balances.date_date]
+    filters:
+      daily_entity_balances.date_date: 7 days
+      daily_entity_balances.entity_type: centralized exchange
+      daily_entity_balances.symbol: LINK
+    sorts: [daily_entity_balances.date_date desc]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: daily_entity_balances.total_balance,
+            id: daily_entity_balances.total_balance, name: Total Balance}], showLabels: true,
+        showValues: true, unpinAxis: true, tickDensity: default, tickDensityCustom: 5,
+        type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    defaults_version: 1
+    listen:
+      Date Date: daily_entity_balances.date_date
+    row: 8
+    col: 12
+    width: 12
+    height: 8
+  - title: USDT CEX Balances
+    name: USDT CEX Balances
+    model: elementus
+    explore: daily_entity_balances
+    type: looker_line
+    fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
+    fill_fields: [daily_entity_balances.date_date]
+    filters:
+      daily_entity_balances.date_date: 7 days
+      daily_entity_balances.entity_type: centralized exchange
+      daily_entity_balances.symbol: USDT
+    sorts: [daily_entity_balances.date_date desc]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: daily_entity_balances.total_balance,
+            id: daily_entity_balances.total_balance, name: Total Balance}], showLabels: true,
+        showValues: true, unpinAxis: true, tickDensity: default, tickDensityCustom: 5,
+        type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    defaults_version: 1
+    listen:
+      Date Date: daily_entity_balances.date_date
+    row: 16
+    col: 0
+    width: 12
+    height: 8
+  - title: USDC CEX Balances
+    name: USDC CEX Balances
+    model: elementus
+    explore: daily_entity_balances
+    type: looker_line
+    fields: [daily_entity_balances.date_date, daily_entity_balances.total_balance]
+    fill_fields: [daily_entity_balances.date_date]
+    filters:
+      daily_entity_balances.date_date: 7 days
+      daily_entity_balances.entity_type: centralized exchange
+      daily_entity_balances.symbol: USDC
+    sorts: [daily_entity_balances.date_date desc]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: true
+    interpolation: linear
+    y_axes: [{label: '', orientation: left, series: [{axisId: daily_entity_balances.total_balance,
+            id: daily_entity_balances.total_balance, name: Total Balance}], showLabels: true,
+        showValues: true, unpinAxis: true, tickDensity: default, tickDensityCustom: 5,
+        type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    defaults_version: 1
+    listen:
+      Date Date: daily_entity_balances.date_date
+    row: 16
+    col: 12
+    width: 12
+    height: 8
   filters:
   - name: Date Date
     title: Date Date
